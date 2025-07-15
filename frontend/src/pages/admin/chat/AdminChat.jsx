@@ -13,7 +13,7 @@ const AdminChat = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await axios.get("https://final-project-6-hh2l.onrender.com/api/users");
+        const res = await axios.get("http://localhost:5000/api/users");
         setUsers(res.data);
       } catch (err) {
         console.error("İstifadəçilər yüklənmədi", err);
@@ -26,7 +26,7 @@ const AdminChat = () => {
     if (!selectedUserId) return;
 
     axios
-      .get(`https://final-project-6-hh2l.onrender.com/api/chat?userId=${selectedUserId}`)
+      .get(`http://localhost:5000/api/chat?userId=${selectedUserId}`)
       .then((res) => setChat(res.data))
       .catch((err) => console.error("Mesajlar yüklənmədi", err));
 
@@ -54,7 +54,7 @@ const AdminChat = () => {
     };
 
     try {
-      await axios.post("https://final-project-6-hh2l.onrender.com/api/chat", newMsg);
+      await axios.post("http://localhost:5000/api/chat", newMsg);
       socket.emit("chat_message", newMsg);
       setChat((prev) => [...prev, newMsg]);
       setMessage("");

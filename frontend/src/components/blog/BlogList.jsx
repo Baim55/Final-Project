@@ -12,7 +12,7 @@ export default function BlogList() {
 
   useEffect(() => {
     axios
-      .get("https://final-project-1-9d1i.onrender.com/api/blogs")
+      .get("http://localhost:5000/api/blogs")
       .then((res) => setBlogs(res.data))
       .catch((err) => console.error("Bloglar alınmadı:", err));
   }, []);
@@ -26,7 +26,7 @@ export default function BlogList() {
             {blogs.map((blog) => (
               <div key={blog._id} className={styles.blogCard}>
                 <img
-                  src={`https://final-project-1-9d1i.onrender.com/images/${blog.image}`}
+                  src={`http://localhost:5000/images/${blog.image}`}
                   alt={blog.title}
                 />
                 <div className={styles.blogContent}>
@@ -71,7 +71,7 @@ export default function BlogList() {
                 <Link key={blog._id} to={`/blog/${blog._id}`}>
                   <div className={styles.recentPost}>
                     <img
-                      src={`https://final-project-1-9d1i.onrender.com/images/${blog.image}`}
+                      src={`http://localhost:5000/images/${blog.image}`}
                       alt={blog.title}
                     />
                     <div>

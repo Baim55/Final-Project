@@ -7,7 +7,7 @@ const AdminMessages = () => {
 
   useEffect(() => {
     axios
-      .get("https://final-project-6-hh2l.onrender.com/api/messages")
+      .get("http://localhost:5000/api/messages")
       .then((res) => setMessages(res.data))
       .catch((err) => console.log(err));
   }, []);

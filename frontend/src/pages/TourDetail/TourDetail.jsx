@@ -40,9 +40,7 @@ export default function TourDetail() {
           setTour(existingTour);
         } else {
           // Fetch from backend if not in state
-          const response = await axios.get(
-            `https://final-project-1-9d1i.onrender.com/api/tours/${id}`
-          );
+          const response = await axios.get(`http://localhost:5000/api/tours/${id}`);
           setTour(response.data);
         }
       } catch (error) {
@@ -58,7 +56,7 @@ export default function TourDetail() {
 
   // If tour is still loading or not found
   if (loading) {
-    return <p className={styles.notFound}>Loading tour...</p>; // Show a loading message
+    return <p className={styles.notFound}>Loading tour...</p>;  // Show a loading message
   }
 
   // If tour not found
@@ -97,9 +95,9 @@ export default function TourDetail() {
 
   return (
     <section className={styles.tourdetail}>
-      <Helmet>
-        <title> Detail | NeoTravel</title>
-      </Helmet>
+       <Helmet>
+              <title> Detail | NeoTravel</title>
+            </Helmet>
       <Container>
         <div className={styles.detail}>
           <div className={styles.header}>
@@ -121,7 +119,7 @@ export default function TourDetail() {
               {tour.images.map((img, idx) => (
                 <SwiperSlide key={idx}>
                   <img
-                    src={`https://final-project-1-9d1i.onrender.com/${img}`}
+                    src={`http://localhost:5000/${img}`}
                     alt={`${tour.name} ${idx + 1}`}
                     className={styles.carouselImage}
                   />

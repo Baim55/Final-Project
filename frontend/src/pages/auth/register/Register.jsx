@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 import { Helmet } from "react-helmet";
 
 const Register = () => {
-  const baseUrl = "https://final-project-1-9d1i.onrender.com/auth";
+  const baseUrl = "http://localhost:5000/auth";
 
   const submitForm = async (values, actions) => {
     try {

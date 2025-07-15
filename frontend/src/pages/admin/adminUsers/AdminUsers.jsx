@@ -6,7 +6,7 @@ export default function AdminUsers() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("https://final-project-6-hh2l.onrender.com/api/users").then(r => setUsers(r.data));
+    axios.get("http://localhost:5000/api/users").then(r => setUsers(r.data));
   }, []);
 
   return (

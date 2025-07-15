@@ -159,7 +159,7 @@ function App() {
   useEffect(() => {
     async function fetchUser() {
       try {
-        const res = await axios.get("https://final-project-1-9d1i.onrender.com/auth/me", {
+        const res = await axios.get("http://localhost:5000/auth/me", {
           withCredentials: true,
         });
         dispatch(setUser(res.data.user));

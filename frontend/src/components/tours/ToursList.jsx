@@ -27,7 +27,7 @@ export default function ToursList({ tours, isSearch = false }) {
 
     try {
       const res = await axios.post(
-        "https://final-project-1-9d1i.onrender.com/api/wishlist/toggle",
+        "http://localhost:5000/api/wishlist/toggle",
         {
           tourId: tour._id,
           userId: user._id,
@@ -66,7 +66,7 @@ export default function ToursList({ tours, isSearch = false }) {
           >
             <div className={styles.imageWrapper}>
               <img
-                src={`https://final-project-1-9d1i.onrender.com/${tour.images[0]}`}
+                src={`http://localhost:5000/${tour.images[0]}`}
                 alt={tour.name}
                 className={styles.image}
               />

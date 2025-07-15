@@ -19,7 +19,7 @@ const AdminLogin = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://final-project-6-hh2l.onrender.com/api/admin/login",
+        "http://localhost:5000/api/admin/login",
         credentials
       );
       const admin = res.data;

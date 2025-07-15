@@ -10,7 +10,7 @@ import { toast } from "react-toastify";
 const ResetPassword = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const baseUrl = `https://final-project-6-hh2l.onrender.com/auth`;
+  const baseUrl = `http://localhost:5000/auth`;
   const token = new URLSearchParams(location.search).get("token");
 
   const submitForm = async (values, actions) => {

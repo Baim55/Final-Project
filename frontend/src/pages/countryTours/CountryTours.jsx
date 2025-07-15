@@ -15,7 +15,7 @@ const CountryTours = () => {
   console.log("Query göndərilir:", cleanedCountry); // Əlavə et
 
   axios
-    .get(`https://final-project-6-hh2l.onrender.com/api/tours?country=${cleanedCountry}`)
+    .get(`http://localhost:5000/api/tours?country=${cleanedCountry}`)
     .then((res) => setTours(res.data))
     .catch((err) => console.error("Xəta:", err));
 }, [country]);

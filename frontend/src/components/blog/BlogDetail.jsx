@@ -14,12 +14,12 @@ export default function BlogDetail() {
 
   useEffect(() => {
     axios
-      .get(`https://final-project-1-9d1i.onrender.com/api/blogs/${id}`)
+      .get(`http://localhost:5000/api/blogs/${id}`)
       .then((res) => setBlog(res.data))
       .catch((err) => console.error("Blog tapılmadı:", err));
 
     axios
-      .get("https://final-project-1-9d1i.onrender.com/api/blogs")
+      .get("http://localhost:5000/api/blogs")
       .then((res) => setRecentBlogs(res.data.slice(0, 3)))
       .catch((err) => console.error("Recent bloglar alınmadı:", err));
   }, [id]);
@@ -33,7 +33,7 @@ export default function BlogDetail() {
           <div className={styles.left}>
             <div className={styles.imageWrapper}>
               <img
-                src={`https://final-project-1-9d1i.onrender.com/images/${blog.image}`}
+                src={`http://localhost:5000/images/${blog.image}`}
                 alt={blog.title}
               />
             </div>
@@ -74,7 +74,7 @@ export default function BlogDetail() {
                 <Link key={item._id} to={`/blog/${item._id}`}>
                   <div className={styles.recentPost}>
                     <img
-                      src={`https://final-project-1-9d1i.onrender.com/images/${item.image}`}
+                      src={`http://localhost:5000/images/${item.image}`}
                       alt={item.title}
                     />
                     <div>

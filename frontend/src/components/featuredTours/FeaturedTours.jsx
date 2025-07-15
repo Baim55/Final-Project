@@ -14,7 +14,7 @@ export default function FeaturedTours() {
   const { t } = useTranslation();
   useEffect(() => {
     axios
-      .get("https://final-project-1-9d1i.onrender.com/api/tours")
+      .get("http://localhost:5000/api/tours")
       .then((res) => {
         // Yalnız seçilmiş turları götürək – ilk 3 və ya discount olanlar
         const featured = res.data.filter((t) => t.isFeatured).slice(0, 12);

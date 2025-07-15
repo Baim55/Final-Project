@@ -117,7 +117,7 @@ export default function BookingForm({
     try {
       const total = calculateTotal();
       const res = await axios.post(
-        "https://final-project-1-9d1i.onrender.com/api/payments/create-checkout-session",
+        "http://localhost:5000/api/payments/create-checkout-session",
         {
           totalAmount: total,
           metadata: {
