@@ -22,7 +22,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://final-project-5-r1q6.onrender.com",
+    origin: "https://final-project-6-hh2l.onrender.com",
     credentials: true,
   },
 });
@@ -31,24 +31,7 @@ const port = process.env.PORT || 5001;
 
 app.use(express.json());
 app.use(cookieParser());
-
-const allowedOrigins = [
-  "http://localhost:5173",
-  "https://final-project-5-r1q6.onrender.com",
-  "https://final-project-1-9d1i.onrender.com",
-];
-
-app.use(cors({
-  origin: function(origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  credentials: true,
-}));
-
+app.use(cors({ origin: "https://final-project-6-hh2l.onrender.com", credentials: true }));
 
 app.use("/images", express.static("src/images"));
 
