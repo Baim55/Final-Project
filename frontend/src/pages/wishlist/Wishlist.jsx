@@ -23,7 +23,7 @@ const Wishlist = () => {
   useEffect(() => {
     if (user) {
       axios
-        .get(`https://final-project-6-hh2l.onrender.com/api/wishlist?userId=${user._id}`)
+        .get(`https://final-project-1-9d1i.onrender.com/api/wishlist?userId=${user._id}`)
         .then((res) => dispatch(setWishlist(res.data)))
         .catch((err) => console.error("Fetch wishlist error:", err));
     }
@@ -31,7 +31,7 @@ const Wishlist = () => {
 
   const handleRemove = async (tourId) => {
     try {
-      await axios.post("http://localhost:5000/api/wishlist/toggle", {
+      await axios.post("https://final-project-1-9d1i.onrender.com/api/wishlist/toggle", {
         tourId,
         userId: user._id,
       });
@@ -65,7 +65,7 @@ const Wishlist = () => {
                         src={
                           item.image ||
                           (item.images?.[0]
-                            ? `http://localhost:5000/${item.images[0]}`
+                            ? `https://final-project-1-9d1i.onrender.com/${item.images[0]}`
                             : "")
                         }
                         alt={item.name}
