@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./Faq.module.css";
+import styles from "./FAQ.module.css";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import PageHeader from "../../components/pageHeader/PageHeader";
 import Container from "../../components/container/Container";
