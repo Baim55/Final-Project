@@ -1,0 +1,81 @@
+.register {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 40px;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text);
+  font-weight: 800;
+}
+
+.formGroup {
+  margin-bottom: 13px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  background-color: var(--input-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input::placeholder {
+  color: var(--text-secondary);
+}
+
+.error {
+  color: var(--heart-color);
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.button {
+  padding: 12px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--primary-hover);
+}
+
+.loginLink {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.loginLink a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.loginLink a:hover {
+  color: var(--primary-hover);
+}

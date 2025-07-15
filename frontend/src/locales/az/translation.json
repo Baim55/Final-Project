@@ -1,0 +1,282 @@
+{
+  "navbar": {
+    "home": "Ana səhifə",
+    "destinations": "Turlar",
+    "about": "Haqqımızda",
+    "blog": "Bloq",
+    "faq": "Tez-tez verilən suallar",
+    "contact": "Əlaqə"
+  },
+  "hero": {
+    "enjoy": "Qalmaqdan zövq alın",
+    "discover": "Möhtəşəm yerləri xüsusi fürsətlərlə kəşf et",
+    "adventure": "Macəraları hiss et",
+    "book": "Unudulmaz təcrübələri bu gün rezerv et",
+    "comfort": "Rahat səyahət et",
+    "deals": "Ən yaxşı təkliflər bir klik uzaqda"
+  },
+  "search": {
+    "destination": "Təyinat",
+    "where": "Haraya getmək istəyirsiniz?",
+    "activity": "Fəaliyyət",
+    "allActivities": "Bütün fəaliyyətlər",
+    "when": "Tarix",
+    "selectDate": "Tarixi seçin",
+    "guests": "Qonaq sayı",
+    "button": "Axtar"
+  },
+  "whyUs": {
+    "subheading": "Niyə biz?",
+    "title": "Biz prosesi asanlaşdırırıq",
+
+    "agentTitle": "Ən yaxşı tur agenti",
+    "agentText": "Peşəkar tur operatorlarımız sizə ən uyğun və sərfəli səyahət planları hazırlayır.",
+
+    "placesTitle": "Gözəl yerlər",
+    "placesText": "Dünyanın ən gözəl və maraqlı yerlərini kəşf edib sizə təqdim edirik.",
+
+    "safetyTitle": "Etibar və Təhlükəsizlik",
+    "safetyText": "Səyahətinizin hər mərhələsində təhlükəsizlik və etibar bizim üçün prioritetdir.",
+
+    "passionTitle": "Səyahətə Həvəs",
+    "passionText": "Səyahətə olan həvəsimizlə sizə unudulmaz təcrübələr təqdim edirik.",
+
+    "priceTitle": "Ən yaxşı qiymət zəmanəti",
+    "priceText": "Ən keyfiyyətli turları ən münasib qiymətlərlə təklif edirik.",
+
+    "bookingTitle": "Sürətli rezervasiya",
+    "bookingText": "Sadə və sürətli rezervasiya sistemimizlə arzularınızdakı turu dərhal planlayın."
+  },
+  "discount": {
+    "subtitle": "Qaçırmayın",
+    "title": "Endirimlər və Fürsətlər",
+    "promoTitle": "Əvvəlcədən sifariş et, qənaət et",
+    "promoText": "İndi və 4 Yanvar 2021 tarixləri arasında qalmağa 15% və ya daha çox endirim əldə edin",
+    "bookNow": "İndi Rezerv Et",
+    "loading": "Endirimli turlar yüklənir…",
+    "error": "Xəta",
+    "notFound": "Endirimli tur tapılmadı."
+  },
+  "testimonials": {
+    "title": "Rəylər",
+    "subtitle": "Müştəri Şərhləri"
+  },
+  "featured": {
+    "subtitle": "Sevimli turlar"
+  },
+  "alltours": {
+    "title": "Bütün Mövcud Turlar",
+    "searchPlaceholder": "Ad ilə axtar...",
+    "sortByName": "Ada görə sıralama",
+    "sortByPrice": "Qiymətə görə sıralama",
+    "az": "A–Z",
+    "za": "Z–A",
+    "lowToHigh": "Ən ucuz → Bahalı",
+    "highToLow": "Bahalı → Ucuz",
+    "loading": "Turlar yüklənir…"
+  },
+  "destinations": {
+    "subtitle": "Qaçırmayın",
+    "title": "Səyahət üçün populyar ölkələr",
+    "tours": "Tur"
+  },
+  "aboutHome": {
+    "subtitle": "Haqqımızda",
+    "title": "Səyahətinizi Planlamaqda Sizə Kömək Edirik",
+    "text": "NeoTravel olaraq bizcə səyahət sadəcə yerləri ziyarət etmək deyil — bu, xatirələr yaratmaq, hekayələr yazmaq və fərqli mədəniyyətlərin gözəlliyini kəşf etməkdir. Biz sizə standart turlardan kənar unikal və dərin səyahət təcrübələri təqdim edirik. Peşəkar bələdçilər, rahat rezervasiya və seçilmiş marşrutlarla hər səfəri mənalı və stresssiz edirik. Macəra, istirahət və ya mədəniyyət axtarırsınızsa, NeoTravel arzularınızı unudulmaz təcrübəyə çevirir.",
+    "button": "Ətraflı"
+  },
+  "aboutStats": {
+    "destinations": "Məkanlar",
+    "amazingTours": "Möhtəşəm Turlar",
+    "tourTypes": "Tur Növləri",
+    "happyCustomers": "Məmnun Müştərilər"
+  },
+  "team": {
+    "ourTeam": "Komandamız",
+    "meetTheTeam": "Komandamızla Tanış Olun",
+    "ceo": "CEO, Təsisçi",
+    "marketing": "Marketinq",
+    "designer": "Dizayner",
+    "support": "Dəstək"
+  },
+  "blog": {
+    "categories": "Bloq Kateqoriyaları",
+    "companyInsight": "Şirkət Baxışı",
+    "creative": "Yaradıcılıq",
+    "lifestyle": "Yaşam Tərzi",
+    "tips": "Məsləhətlər",
+    "uncategorized": "Kateqoriyasız",
+    "recentPosts": "Son Paylaşımlar",
+    "title": "Bloq Paylaşımları",
+    "readMore": "Daha ətraflı →",
+    "blogTitle": "Ən Son Bloqlarımız",
+    "seeAllBlog": "Bütün bloqlara bax"
+  },
+  "contact": {
+    "title": "Əlaqə",
+    "seoTitle": "Əlaqə",
+    "address": "Ünvan",
+    "phone": "Telefon",
+    "email": "Email",
+    "hours": "İş Saatları",
+    "contactUs": "Bizimlə Əlaqə",
+    "description": "Suallarınız və ya fikirləriniz varsa, bizimlə əlaqə saxlamaqdan çəkinməyin!",
+    "namePlaceholder": "Ad Soyad",
+    "emailPlaceholder": "Email Ünvanı",
+    "messagePlaceholder": "Mesajınız",
+    "send": "Mesaj Göndər"
+  },
+  "footer": {
+    "description": "Rəqəmsal dünyada rahat və sərfəli səyahət üçün bizimlə olun!",
+    "addressLine1": "Cəfər Xəndan 42A",
+    "addressLine2": "Binəqədi, Bakı 1138",
+    "viewMap": "Xəritəyə bax",
+    "ourServices": "Xidmətlərimiz",
+    "services": {
+      "booking": "Rezervasiya",
+      "rentalCar": "Avtomobil icarəsi",
+      "hostelWorld": "HostelWorld",
+      "trivago": "Trivago",
+      "tripAdvisor": "TripAdvisor"
+    },
+    "explore": "Kəşf et",
+    "exploreItems": {
+      "madrid": "Madrid Turu",
+      "stockholm": "Stokholm Şəhəri",
+      "roma": "Roma Şəhəri",
+      "shanghai": "Şanxay Şəhəri",
+      "tokyo": "Tokio"
+    },
+    "getUpdates": "Yeniliklər və Daha Çox",
+    "subscribeText": "Pulsuz bülletenə abunə olun və yeniliklərdən xəbərdar olun",
+    "emailPlaceholder": "Email ünvanınız",
+    "subscribeButton": "Abunə ol →",
+    "copyright": "Copyright © 2025 NeoTravel. Bütün hüquqlar qorunur.",
+    "links": {
+      "privacy": "Gizlilik",
+      "policy": "Qaydalar",
+      "about": "Haqqımızda",
+      "support": "Dəstək",
+      "faq": "Suallar",
+      "blog": "Bloq"
+    }
+  },
+  "booking": {
+    "title": "Turu Rezerv Et",
+    "time": "Saat",
+    "tickets": "Biletlər",
+    "total": "Cəmi",
+    "bookNow": "Rezerv Et",
+    "loginToBook": "Rezerv etmək üçün daxil olun",
+    "timeSlotFull": "Bu saat doludur. Zəhmət olmasa başqa vaxt seçin.",
+    "bookingError": "Rezervasiya zamanı xəta baş verdi.",
+    "bookingSuccess": "Rezervasiya uğurla tamamlandı",
+    "date": "Tarix",
+    "adultPrice": "Böyüklər (18+) ${{price}}",
+    "youthPrice": "Gənclər (13–17) ${{price}}",
+    "childPrice": "Uşaqlar (0–12) ${{price}}",
+    "discount": "{{discount}}% endirim",
+    "addExtra": "Əlavə xidmətlər",
+    "perPerson": "şəxs başına",
+    "full": "(Dolu)",
+    "left": "yer qalıb",
+    "noGuest": "Zəhmət olmasa, ən azı bir qonaq seçin.",
+    "extraLuggageDescription": "Əlavə baqaj xidmətini əhatə edir",
+    "personalServiceDescription": "Hər qonaq üçün şəxsi bələdçi və yardım"
+  },
+  "wishlist": {
+    "title": "Favorilərim",
+    "empty": "Favorilərdə heç nə yoxdur.",
+    "reserve": "Rezerv et"
+  },
+  "reserve": {
+    "title": "Rezervasiyalarım",
+    "remove": "Ləğv et"
+  },
+  "pageHeader": {
+    "destinations": {
+      "title": "Turlar"
+    },
+    "about": {
+      "title": "Haqqımızda"
+    },
+    "blog": {
+      "title": "Bloq"
+    },
+    "faq": {
+      "title": "Tez-tez verilən suallar"
+    }
+  },
+  "faq": {
+    "title": "Sualınız var?",
+    "description": "NeoTravel ilə planlaşdırdığınız səyahətlə bağlı suallarınız var? Aşağıda tez-tez verilən suallar bölməsinə baxaraq ödəniş, rezervasiya, ləğv və digər mövzularda cavabları tapa bilərsiniz. Əlavə kömək lazım olsa, dəstək komandamızla əlaqə saxlaya bilərsiniz.",
+    "categories": {
+      "payment": "Ödəniş",
+      "reservation": "Rezervasiya",
+      "cancellation": "Ləğv və Geri Ödəniş",
+      "experience": "Bələdçi və Təcrübə",
+      "support": "Hesab və Dəstək"
+    },
+    "questions": {
+      "payment": [
+        {
+          "question": "Elan olunan qiymətdən əlavə əlavə ödənişlər varmı?",
+          "answer": "Gizli ödəniş yoxdur. Bütün vergilər və rüsumlar tur detalları istisna etmədikcə qiymətə daxildir."
+        },
+        {
+          "question": "Ödənişi yerli valyutada edə bilərəm?",
+          "answer": "Bütün ödənişlər USD ilə həyata keçirilir. İstənilən ölkənin kartı ilə ödəyə bilərsiniz, ancaq məzənnə fərqləri tətbiq oluna bilər."
+        },
+        {
+          "question": "Online ödəniş təhlükəsizdirmi?",
+          "answer": "Bəli. Biz şifrələnmiş SSL bağlantıları və etibarlı ödəniş sistemlərindən istifadə edirik."
+        }
+      ],
+      "reservation": [
+        {
+          "question": "Necə rezervasiya edə bilərəm?",
+          "answer": "Sadəcə turu seçin, tarix və saatı göstərin, qonaq məlumatlarını daxil edin və ödənişi tamamlayın."
+        },
+        {
+          "question": "Hesab yaratmadan rezervasiya edə bilərəm?",
+          "answer": "Xeyr, çünki hesabla rezervasiyanızı izləmək, dəyişmək və ya ləğv etmək asan olacaq."
+        },
+        {
+          "question": "Rezervasiyadan sonra nə baş verir?",
+          "answer": "E-poçt vasitəsilə təsdiq məktubu alacaqsınız və bütün detalları görəcəksiniz."
+        }
+      ],
+      "cancellation": [
+        {
+          "question": "Rezervasiyanı ləğv edə bilərəm?",
+          "answer": "Bəli, amma hər turun öz ləğv siyasəti var və ona uyğun hərəkət edilməlidir."
+        },
+        {
+          "question": "Geri ödəniş nə qədər vaxta edilir?",
+          "answer": "Əksər hallarda 5–7 iş günü ərzində bank tərəfindən həyata keçirilir."
+        }
+      ],
+      "experience": [
+        {
+          "question": "Tur zamanı bələdçi bizimlə olacaq?",
+          "answer": "Bəli, bütün turlarımız peşəkar bələdçilərlə həyata keçirilir."
+        },
+        {
+          "question": "Şəxsi turu fərdiləşdirə bilərəm?",
+          "answer": "Əlbəttə! Bizimlə əlaqə saxlayaraq xüsusi istəklərinizi bildirə bilərsiniz."
+        }
+      ],
+      "support": [
+        {
+          "question": "Şifrəmi unutdum. Nə etməliyəm?",
+          "answer": "Giriş səhifəsində 'Şifrəni unutdun?' düyməsinə klikləyin və təlimatları izləyin."
+        },
+        {
+          "question": "Müştəri dəstəyi ilə necə əlaqə saxlaya bilərəm?",
+          "answer": "Əlaqə səhifəsini istifadə edə, canlı çat yazışa və ya support@neotravel.com-a e-poçt yaza bilərsiniz."
+        }
+      ]
+    }
+  }
+}

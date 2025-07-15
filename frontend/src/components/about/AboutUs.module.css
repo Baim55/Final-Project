@@ -1,0 +1,164 @@
+.about {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+[data-theme="dark"] .about {
+  background-color: #0f172a;
+}
+
+.aboutarea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.subtitle {
+  font-family: "Thea Amelia", cursive;
+  font-size: 1.25rem;
+  color: var(--primary, #dc834e) !important;
+  margin-bottom: 8px;
+}
+
+[data-theme="dark"] .subtitle {
+  color: #fbbf24 !important;
+}
+
+.sectionTitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  margin: 0 auto;
+  max-width: 600px;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+[data-theme="dark"] .sectionTitle {
+  color: #f8fafc;
+}
+
+.image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.text {
+  max-width: 600px;
+}
+
+.text h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.text p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+[data-theme="dark"] .text p {
+  color: #cbd5e1;
+}
+
+.text button {
+  background-color: #dc834e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+[data-theme="dark"] .text button {
+  background-color: #fbbf24;
+  color: #000;
+}
+
+@media (max-width: 1024px) {
+  .aboutarea {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .text {
+    max-width: 90%;
+    padding: 0 20px;
+  }
+
+  .sectionTitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .aboutarea {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .image img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .text {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
+
+  .text button {
+    padding: 10px 16px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .text p {
+    font-size: 15px;
+  }
+
+  .text button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
+

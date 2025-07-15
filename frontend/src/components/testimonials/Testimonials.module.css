@@ -1,0 +1,250 @@
+.testimonialSection {
+  background-color: #f9f4f0;
+  padding: 100px 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 650px;
+  color: #202f59;
+}
+
+[data-theme="dark"] .testimonialSection {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+.quoteLeft,
+.quoteRight {
+  position: absolute;
+  top: 50%;
+  width: 200px;
+  transform: translateY(-50%);
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.quoteLeft {
+  left: 80px;
+}
+
+.quoteRight {
+  right: 80px;
+}
+
+.subTitle {
+  font-family: "Thea Amelia", cursive;
+  font-size: 30px;
+  color: #dc834e;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+[data-theme="dark"] .subTitle {
+  color: #fbbf24;
+}
+
+.mainTitle {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+[data-theme="dark"] .mainTitle {
+  color: #f8fafc;
+}
+
+.slider {
+  max-width: 850px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.slide {
+  padding: 0 20px;
+}
+
+.comment {
+  font-size: 25px;
+  font-style: italic;
+  margin-bottom: 40px;
+  color: #444;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
+
+[data-theme="dark"] .comment {
+  color: #e2e8f0;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.circleIcon {
+  background-color: #dc834e;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[data-theme="dark"] .circleIcon {
+  background-color: #fbbf24;
+  color: #000;
+}
+
+.avatar {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+[data-theme="dark"] .avatar {
+  border-color: #334155;
+}
+
+.info {
+  text-align: left;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #202f59;
+}
+
+[data-theme="dark"] .name {
+  color: #f1f5f9;
+}
+
+.job {
+  font-size: 14px;
+  color: #888;
+}
+
+[data-theme="dark"] .job {
+  color: #94a3b8;
+}
+
+.rating {
+  font-size: 16px;
+  color: #2dd75d;
+}
+
+[data-theme="dark"] .rating {
+  color: #4ade80;
+}
+
+@media (max-width: 1024px) {
+  .mainTitle {
+    font-size: 36px;
+  }
+
+  .comment {
+    font-size: 20px;
+  }
+
+  .details {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .info {
+    text-align: center;
+  }
+
+  .quoteLeft,
+  .quoteRight {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonialSection {
+    padding: 60px 20px;
+    height: auto;
+  }
+
+  .mainTitle {
+    font-size: 28px;
+  }
+
+  .subTitle {
+    font-size: 22px;
+  }
+
+  .comment {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .circleIcon,
+  .avatar {
+    width: 65px;
+    height: 65px;
+  }
+
+  .circleIcon {
+    font-size: 16px;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .job {
+    font-size: 13px;
+  }
+
+  .rating {
+    font-size: 14px;
+  }
+
+  /* Arxa fondakı quote şəkilləri mobil üçün deaktiv */
+  .quoteLeft,
+  .quoteRight {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  .mainTitle {
+    font-size: 22px;
+  }
+
+  .subTitle {
+    font-size: 18px;
+  }
+
+  .comment {
+    font-size: 16px;
+  }
+
+  .details {
+    gap: 8px;
+  }
+
+  .slider {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,362 @@
+.tourdetail{
+  background-color: #F6F7FB;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+  
+}
+
+.header {
+  text-align: center;
+}
+
+.title {
+  font-size: 2.75rem;
+  font-weight: bold;
+  color: #222;
+  margin: 0;
+}
+
+.location {
+  color: #666;
+  font-size: 1.1rem;
+  margin-top: 30px;
+}
+
+.row {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.carouselWrapper {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.carouselImage {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+:global(.swiper-button-prev),
+:global(.swiper-button-next) {
+  color: #333;
+  width: 48px !important;
+  height: 48px !important;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15) !important;
+  z-index: 10 !important;
+  transition: all 0.3s ease;
+}
+
+/* Ox icon ölçüsü */
+:global(.swiper-button-prev::after),
+:global(.swiper-button-next::after) {
+  font-size: 1.6rem !important;
+  color: inherit;
+}
+
+/* Hover effekti */
+:global(.swiper-button-prev:hover),
+:global(.swiper-button-next:hover) {
+  background-color: black !important;
+  color: #fff !important;
+}
+
+.metaGrid {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.metaItem h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.metaValue {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  color: #222;
+}
+
+.description {
+  margin-bottom: 2rem;
+}
+.description h3 {
+  margin-bottom: 0.5rem;
+}
+.description p {
+  line-height: 1.6;
+  color: #444;
+}
+
+.near {
+  display: flex;
+  gap: 30px;
+}
+
+.nearbyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.nearbyCard {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s, box-shadow 0.2s;
+}
+.nearbyCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  flex: 0 0 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.info {
+  margin-left: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-weight: 500;
+  color: #222;
+  text-decoration: none;
+  margin-bottom: 0.25rem;
+}
+.name:hover {
+  text-decoration: underline;
+}
+
+.distance {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.mapSection {
+  margin: 2rem 0;
+}
+.mapSection h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+.mapWrapper {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.mapWrapper iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.notFound {
+  text-align: center;
+  margin: 2rem 0;
+  color: #900;
+}
+
+
+.leftCol {
+  flex: 2;
+  min-width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.rightCol {
+  flex: 1;
+  min-width: 35%;
+}
+
+.detailGrid {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 2;
+  min-width: 60%;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.sidebar > * {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+[data-theme="dark"] .tourdetail {
+  background-color: var(--bg);
+}
+
+[data-theme="dark"] .title {
+  color: var(--title-color);
+}
+
+[data-theme="dark"] .location {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .metaItem h4,
+[data-theme="dark"] .metaValue,
+[data-theme="dark"] .description p,
+[data-theme="dark"] .mapSection h3 {
+  color: var(--card-text);
+}
+
+[data-theme="dark"] .nearbyCard {
+  background-color: var(--card-bg);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .name {
+  color: var(--card-text);
+}
+
+[data-theme="dark"] .distance {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .sidebar > * {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .notFound {
+  color: #f87171;
+}
+
+[data-theme="dark"] :global(.swiper-button-prev),
+[data-theme="dark"] :global(.swiper-button-next) {
+  background-color: var(--card-bg) !important;
+  color: var(--text) !important;
+  box-shadow: 0 3px 12px rgba(255, 255, 255, 0.05) !important;
+}
+
+[data-theme="dark"] :global(.swiper-button-prev:hover),
+[data-theme="dark"] :global(.swiper-button-next:hover) {
+  background-color: var(--text) !important;
+  color: black !important;
+}
+/* ======= Responsive: Tablet və Mobil üçün ======= */
+@media (max-width: 1024px) {
+
+  .detailGrid {
+    flex-direction: column;
+  }
+
+  .content,
+  .sidebar {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .nearbyGrid {
+    display: flex;
+    flex-wrap: wrap
+  }
+
+  .carouselImage {
+    height: 300px;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .metaGrid {
+    gap: 1rem;
+  }
+
+  .metaItem h4 {
+    font-size: 0.95rem;
+  }
+
+  .metaValue {
+    font-size: 1.1rem;
+  }
+
+  .carouselImage {
+    height: 250px;
+  }
+
+  .mapSection h3 {
+    font-size: 1.1rem;
+  }
+
+  .sidebar > * {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .location {
+    font-size: 1rem;
+  }
+
+  .carouselImage {
+    height: 200px;
+  }
+
+  .nearbyGrid {
+    grid-template-columns: repeat(2, 1fr); /* 2 sütunlu düzülüş */
+  }
+
+  .metaGrid {
+    gap: 1rem;
+  }
+
+  .metaItem h4 {
+    font-size: 0.85rem;
+  }
+
+  .metaValue {
+    font-size: 1rem;
+  }
+
+  .description p {
+    font-size: 0.95rem;
+  }
+}

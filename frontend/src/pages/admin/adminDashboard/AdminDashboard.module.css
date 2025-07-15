@@ -1,0 +1,86 @@
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg);
+  font-family: sans-serif;
+}
+
+.sidebar {
+  width: 220px;
+  padding: 1rem;
+  background-color: var(--card-bg);
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.menuTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: var(--text-secondary);
+  border-radius: 6px;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--text);
+}
+
+.active {
+  color: #dc834e; /* Narıncı rəng yalnız yazıya tətbiq olunur */
+  font-weight: 600;
+}
+
+.content {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: var(--bg);
+  color: var(--text);
+}
+/* XS və SM: 726px-dən kiçik – mobil və planşet */
+@media (max-width: 725.98px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .menuList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .link {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+    border-radius: 4px;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+}

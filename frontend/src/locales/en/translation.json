@@ -1,0 +1,282 @@
+{
+  "navbar": {
+    "home": "Home",
+    "destinations": "Destinations",
+    "about": "About",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "enjoy": "Enjoy your stay",
+    "discover": "Discover amazing places at exclusive deals",
+    "adventure": "Feel the adventure",
+    "book": "Book unforgettable experiences today",
+    "comfort": "Travel in comfort",
+    "deals": "Best deals just a click away"
+  },
+  "search": {
+    "destination": "Destination",
+    "where": "Where to go?",
+    "activity": "Activity",
+    "allActivities": "All Activities",
+    "when": "When",
+    "selectDate": "Select dates",
+    "guests": "Guests",
+    "button": "Search"
+  },
+  "featured": {
+    "subtitle": "Favorite Tours"
+  },
+  "whyUs": {
+    "subheading": "Why us",
+    "title": "We Make All The Process Easy",
+
+    "agentTitle": "Best Travel Agent",
+    "agentText": "Our professional tour operators design the most suitable and affordable travel plans for you.",
+
+    "placesTitle": "Beautiful Places",
+    "placesText": "We discover and offer you the most stunning and fascinating destinations around the world.",
+
+    "safetyTitle": "Trust & Safety",
+    "safetyText": "Your safety and trust are our top priorities throughout every step of your journey.",
+
+    "passionTitle": "Passionate Travel",
+    "passionText": "With our passion for travel, we deliver unforgettable experiences and adventures.",
+
+    "priceTitle": "Best Price Guarantee",
+    "priceText": "We guarantee the best quality tours at the most competitive prices.",
+
+    "bookingTitle": "Fast Booking",
+    "bookingText": "Plan your dream trip instantly with our simple and fast booking system."
+  },
+  "discount": {
+    "subtitle": "Don’t miss",
+    "title": "Deals & Discounts",
+    "promoTitle": "Book Early to Save",
+    "promoText": "Enjoy 15% or more off stays between now and January 4, 2021",
+    "bookNow": "Book Now",
+    "loading": "Loading discounts…",
+    "error": "Error",
+    "notFound": "No discounted tours found."
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "Customer Reviews"
+  },
+  "alltours": {
+    "title": "All Available Tours",
+    "searchPlaceholder": "Search by name...",
+    "sortByName": "Sort by Name",
+    "sortByPrice": "Sort by Price",
+    "az": "A–Z",
+    "za": "Z–A",
+    "lowToHigh": "Low → High",
+    "highToLow": "High → Low",
+    "loading": "Loading tours…"
+  },
+  "destinations": {
+    "subtitle": "Don’t miss",
+    "title": "Popular Countries to Visit",
+    "tours": "Tours"
+  },
+  "aboutHome": {
+    "subtitle": "About",
+    "title": "We Help You Planning Your Journey",
+    "text": "At NeoTravel, we believe travel is more than just visiting places — it's about creating stories, making memories, and discovering the beauty of different cultures. We curate unique and immersive tours that take you beyond the typical tourist path. With expert local guides, seamless booking, and carefully selected destinations, we make every journey meaningful and stress-free. Whether you're seeking adventure, relaxation, or cultural exploration, NeoTravel helps turn your travel dreams into unforgettable experiences.",
+    "button": "More Detailed"
+  },
+  "aboutStats": {
+    "destinations": "Destinations",
+    "amazingTours": "Amazing Tours",
+    "tourTypes": "Tour Types",
+    "happyCustomers": "Happy Customers"
+  },
+  "team": {
+    "ourTeam": "Our Team",
+    "meetTheTeam": "Meet The Team",
+    "ceo": "CEO, Founder",
+    "marketing": "Marketing",
+    "designer": "Designer",
+    "support": "Support"
+  },
+  "blog": {
+    "categories": "Blog Categories",
+    "companyInsight": "Company Insight",
+    "creative": "Creative",
+    "lifestyle": "Lifestyle",
+    "tips": "Tips & Tricks",
+    "uncategorized": "Uncategorized",
+    "recentPosts": "Recent Posts",
+    "title": "Blog Posts",
+    "readMore": "Read more →",
+    "blogTitle": "Our Latest Blogs",
+    "seeAllBlog": "See All Blogs"
+  },
+  "contact": {
+    "title": "Contact",
+    "seoTitle": "Contact",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Business Hours",
+    "contactUs": "Contact Us",
+    "description": "Feel free to reach out to us with any questions or concerns!",
+    "namePlaceholder": "Full Name",
+    "emailPlaceholder": "Email Address",
+    "messagePlaceholder": "Your Message",
+    "send": "Send Message"
+  },
+  "footer": {
+    "description": "Join us for a comfortable and affordable journey in the digital world!",
+    "addressLine1": "Jafar Khandan 42A",
+    "addressLine2": "Binagadi, Baku 1138",
+    "viewMap": "View Map",
+    "ourServices": "Our Services",
+    "services": {
+      "booking": "Booking",
+      "rentalCar": "Rental Car",
+      "hostelWorld": "HostelWorld",
+      "trivago": "Trivago",
+      "tripAdvisor": "TripAdvisor"
+    },
+    "explore": "Explore",
+    "exploreItems": {
+      "madrid": "Madrid Tour",
+      "stockholm": "Stockholm City",
+      "roma": "Roma City",
+      "shanghai": "Shanghai City",
+      "tokyo": "Tokyo"
+    },
+    "getUpdates": "Get Updates & More",
+    "subscribeText": "Subscribe to the free newsletter and stay up to date",
+    "emailPlaceholder": "Your email",
+    "subscribeButton": "Subscribe →",
+    "copyright": "Copyright © 2025 NeoTravel. All Rights Reserved.",
+    "links": {
+      "privacy": "Privacy",
+      "policy": "Policy",
+      "about": "About Us",
+      "support": "Support",
+      "faq": "FAQ",
+      "blog": "Blog"
+    }
+  },
+  "booking": {
+    "title": "Book This Tour",
+    "time": "Time",
+    "tickets": "Tickets",
+    "addExtra": "Add Extra",
+    "total": "Total",
+    "bookNow": "Book Now",
+    "loginToBook": "Login to Book",
+    "timeSlotFull": "This time slot is full. Please choose another.",
+    "bookingError": "An error occurred during booking.",
+    "bookingSuccess": "Booking completed successfully",
+    "date": "Date",
+    "adultPrice": "Adult (18+) ${{price}}",
+    "youthPrice": "Youth (13–17) ${{price}}",
+    "childPrice": "Children (0–12) ${{price}}",
+    "discount": "{{discount}}% off",
+    "perPerson": "per person",
+    "full": "(Full)",
+    "left": "left",
+    "noGuest": "Please select at least one guest before booking.",
+    "extraLuggageDescription": "Includes additional luggage service",
+    "personalServiceDescription": "Personal guide and assistance for each guest"
+  },
+  "wishlist": {
+    "title": "My Wishlist",
+    "empty": "There is nothing on the wishlist.",
+    "reserve": "Reserve"
+  },
+  "reserve": {
+    "title": "My Bookings",
+    "remove": "Cancel"
+  },
+  "pageHeader": {
+    "destinations": {
+      "title": "Destinations"
+    },
+    "about": {
+      "title": "About Us"
+    },
+    "blog": {
+      "title": "Blog"
+    },
+    "faq": {
+      "title": "FAQ"
+    }
+  },
+  "faq": {
+    "title": "Have a Question?",
+    "description": "Have questions about your trip with NeoTravel? Explore our frequently asked questions below to find answers about payment, booking, cancellation, and more. Still need help? Feel free to contact our support team.",
+    "categories": {
+      "payment": "Payment",
+      "reservation": "Reservation",
+      "cancellation": "Cancellation & Refund",
+      "experience": "Tour Guide & Experience",
+      "support": "Account & Support"
+    },
+    "questions": {
+      "payment": [
+        {
+          "question": "Are there any extra fees I need to pay on top of the listed price?",
+          "answer": "No hidden fees. All taxes and charges are included unless otherwise stated in the tour details."
+        },
+        {
+          "question": "Can I pay in my local currency?",
+          "answer": "All payments are processed in USD. You can use a card from any country, but exchange rates may apply."
+        },
+        {
+          "question": "Is online payment secure?",
+          "answer": "Yes. We use encrypted SSL connections and trusted payment gateways to ensure your security."
+        }
+      ],
+      "reservation": [
+        {
+          "question": "How do I make a reservation?",
+          "answer": "Select your tour, pick a date and time, enter guest details, and proceed to payment."
+        },
+        {
+          "question": "Can I book a tour without creating an account?",
+          "answer": "No, an account is required to manage your bookings."
+        },
+        {
+          "question": "What happens after I book a tour?",
+          "answer": "You’ll receive a confirmation email with all details."
+        }
+      ],
+      "cancellation": [
+        {
+          "question": "Can I cancel a booking?",
+          "answer": "Yes, but each tour has its own cancellation policy."
+        },
+        {
+          "question": "How long does it take to receive a refund?",
+          "answer": "Refunds take 5–7 business days depending on your bank."
+        }
+      ],
+      "experience": [
+        {
+          "question": "Will a guide be with us during the tour?",
+          "answer": "Yes, a professional guide is always included."
+        },
+        {
+          "question": "Can I customize a private tour?",
+          "answer": "Yes, contact support or use the request form."
+        }
+      ],
+      "support": [
+        {
+          "question": "I forgot my password. What should I do?",
+          "answer": "Click 'Forgot Password' on the login page."
+        },
+        {
+          "question": "How can I contact customer support?",
+          "answer": "Use the Contact page, chat, or email support@neotravel.com."
+        }
+      ]
+    }
+  }
+}

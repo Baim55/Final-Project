@@ -1,0 +1,254 @@
+.grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  margin: 2rem 0;
+}
+
+/* ==== Card ==== */
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg);
+  color: var(--text);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(6,30,98,.08);
+  transition: box-shadow .3s ease, transform .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 60px rgba(6,30,98,.1);
+}
+
+/* ==== Image Wrapper ==== */
+.imageWrapper {
+  position: relative;
+  padding-top: 80%;
+  background: #eee;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.image {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+
+/* ==== Hover Overlay ==== */
+.imageWrapper::before {
+  content: "";
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: var(--overlay);
+  opacity: 0;
+  transition: opacity .3s ease;
+  z-index: 1;
+}
+
+.card:hover .imageWrapper::before {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--overlay);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+/* ==== Heart Icon ==== */
+.heartIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  font-size: 20px;
+  color: #fff;
+  padding: 6px;
+  border-radius: 50%;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card:hover .heartIcon {
+  opacity: 1;
+}
+
+.heartIcon.active {
+  opacity: 1;
+  color: var(--heart-color);
+}
+
+/* ==== 3D Button ==== */
+.icon3DButton {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon3DButton:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+/* ==== Card Content ==== */
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  flex: 1;
+}
+
+.title {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+}
+
+.location i {
+  margin-right: 8px;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+}
+
+.meta span {
+  display: flex;
+  align-items: center;
+}
+
+.meta span i {
+  margin-right: 5px;
+  color: var(--primary);
+}
+
+/* ==== Footer ==== */
+.footer {
+  margin-top: auto;
+  border-top: 1px solid var(--border);
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.price {
+  font-weight: 700;
+  color: var(--price-color);
+}
+
+.button {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: color .3s ease;
+}
+
+.button:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .footer {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 17px;
+  }
+
+  .location,
+  .meta,
+  .footer {
+    font-size: 13px;
+  }
+
+  .heartIcon {
+    font-size: 16px;
+    top: 8px;
+    right: 8px;
+  }
+
+  .icon3DButton {
+    font-size: 14px;
+    bottom: 8px;
+    right: 8px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 16px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .button {
+    font-size: 13px;
+  }
+}
