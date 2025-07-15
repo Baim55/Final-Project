@@ -13,7 +13,7 @@ export default function Testimonials() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/admin/comments")
+      .get("https://final-project-1-9d1i.onrender.com/api/admin/comments")
       .then((res) => setReviews(res.data.slice(0, 5)))
       .catch((err) => console.error("Yorumlar alınmadı:", err));
   }, []);
@@ -49,7 +49,7 @@ export default function Testimonials() {
               <img
                 src={
                   review.user?.image
-                    ? `http://localhost:5000/${review.user.image}`
+                    ? `https://final-project-1-9d1i.onrender.com/${review.user.image}`
                     : "/avatar.png"
                 }
                 alt="avatar"

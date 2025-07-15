@@ -47,7 +47,7 @@ export default function ReviewForm({ tourId, user, onReviewSubmit }) {
 
     try {
       setLoading(true);
-      await axios.post("http://localhost:5000/api/reviews", {
+      await axios.post("https://final-project-1-9d1i.onrender.com/api/reviews", {
         tour: tourId,
         user: user._id,
         comment,

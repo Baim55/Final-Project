@@ -15,7 +15,7 @@ import { FiLogOut, FiLogIn } from "react-icons/fi";
 import { toast } from "react-toastify";
 
 const Wrapper = () => {
-  const baseUrl = "http://localhost:5000/auth";
+  const baseUrl = "https://final-project-1-9d1i.onrender.com/auth";
   const { user } = useSelector((state) => state.user);
   const { admin } = useSelector((state) => state.admin);
   const { bookings } = useSelector((state) => state.booking);
@@ -47,7 +47,7 @@ const Wrapper = () => {
   useEffect(() => {
     if (user) {
       axios
-        .get(`http://localhost:5000/api/wishlist?userId=${user._id}`)
+        .get(`https://final-project-1-9d1i.onrender.com/api/wishlist?userId=${user._id}`)
         .then((res) => dispatch(setWishlist(res.data)))
         .catch((err) => console.error("Wishlist fetch error:", err));
     }
@@ -70,7 +70,7 @@ const Wrapper = () => {
                 <img
                   src={
                     user?.image
-                      ? `http://localhost:5000/${user.image.replace(
+                      ? `https://final-project-1-9d1i.onrender.com/${user.image.replace(
                           / /g,
                           "%20"
                         )}`

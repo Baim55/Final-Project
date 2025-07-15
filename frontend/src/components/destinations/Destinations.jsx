@@ -13,7 +13,7 @@ export default function Destinations() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/tours")
+      .get("https://final-project-1-9d1i.onrender.com/api/tours")
       .then((res) => {
         const grouped = {};
         res.data.forEach((tour) => {

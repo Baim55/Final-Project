@@ -33,7 +33,7 @@ const Chat = () => {
     if (!currentUserId) return;
 
     axios
-      .get(`http://localhost:5000/api/chat?userId=${currentUserId}`)
+      .get(`https://final-project-1-9d1i.onrender.com/api/chat?userId=${currentUserId}`)
       .then((res) => setChat(res.data))
       .catch((err) => console.error("Mesajlar yüklənmədi", err));
 
@@ -61,7 +61,7 @@ const Chat = () => {
     };
 
     try {
-      await axios.post("http://localhost:5000/api/chat", newMsg);
+      await axios.post("https://final-project-1-9d1i.onrender.com/api/chat", newMsg);
       socket.emit("chat_message", newMsg);
       setChat((prev) => [...prev, newMsg]);
       setMessage("");

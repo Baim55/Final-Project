@@ -57,7 +57,7 @@ export default function ReviewList({ tourId, refreshTrigger }) {
     async function load() {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/reviews?tourId=${tourId}`
+          `https://final-project-1-9d1i.onrender.com/api/reviews?tourId=${tourId}`
         );
         setReviews(res.data);
       } catch (err) {
@@ -70,7 +70,7 @@ export default function ReviewList({ tourId, refreshTrigger }) {
   const handleDelete = async (id) => {
     if (!window.confirm("Are you sure you want to delete the comment?")) return;
     try {
-      await axios.delete(`http://localhost:5000/api/reviews/${id}`);
+      await axios.delete(`https://final-project-1-9d1i.onrender.com/api/reviews/${id}`);
       setReviews((prev) => prev.filter((r) => r._id !== id));
     } catch (err) {
       alert("An error occurred during deletion.");
@@ -91,7 +91,7 @@ export default function ReviewList({ tourId, refreshTrigger }) {
 
   const handleUpdate = async (id) => {
     try {
-      await axios.put(`http://localhost:5000/api/reviews/${id}`, {
+      await axios.put(`https://final-project-1-9d1i.onrender.com/api/reviews/${id}`, {
         comment: editedComment,
         rating: Number(editedRating),
       });
@@ -152,7 +152,7 @@ export default function ReviewList({ tourId, refreshTrigger }) {
                 <img
                   src={
                     r.user?.image
-                      ? `http://localhost:5000/${r.user.image.replace(
+                      ? `https://final-project-1-9d1i.onrender.com/${r.user.image.replace(
                           / /g,
                           "%20"
                         )}`

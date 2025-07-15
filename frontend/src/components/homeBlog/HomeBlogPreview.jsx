@@ -15,7 +15,7 @@ export default function HomeBlogPreview() {
     AOS.init({ duration: 1000, once: true });
 
     axios
-      .get("http://localhost:5000/api/blogs")
+      .get("https://final-project-1-9d1i.onrender.com/api/blogs")
       .then((res) => setBlogs(res.data.slice(0, 3)))
       .catch((err) => console.error("Bloglar alınmadı:", err));
   }, []);
@@ -34,7 +34,7 @@ export default function HomeBlogPreview() {
               data-aos-delay={index * 100}
             >
               <img
-                src={`http://localhost:5000/images/${blog.image}`}
+                src={`https://final-project-1-9d1i.onrender.com/images/${blog.image}`}
                 alt={blog.title}
               />
               <div className={styles.content}>
