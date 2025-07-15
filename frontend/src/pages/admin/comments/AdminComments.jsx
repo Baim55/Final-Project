@@ -7,7 +7,7 @@ export default function AdminComments() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/admin/comments")
+      .get("https://final-project-6-hh2l.onrender.com/api/admin/comments")
       .then((res) => setReviews(res.data))
       .catch((err) => console.error("Yorumlar alınmadı:", err));
   }, []);

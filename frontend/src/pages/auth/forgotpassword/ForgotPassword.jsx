@@ -6,7 +6,7 @@ import styles from "../login/Login.module.css";
 import { toast } from "react-toastify";
 
 const ForgotPassword = () => {
-  const baseUrl = `http://localhost:5000/auth`;
+  const baseUrl = `https://final-project-6-hh2l.onrender.com/auth`;
 
   const submitForm = async (values, actions) => {
     try {

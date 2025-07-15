@@ -25,7 +25,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/messages/send", formData);
+      await axios.post("https://final-project-6-hh2l.onrender.com/api/messages/send", formData);
       toast.success("Your message has been sent to your email!");
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {

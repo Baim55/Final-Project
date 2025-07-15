@@ -35,7 +35,7 @@ export default function AdminBlogForm({ onSuccess }) {
     });
 
     try {
-      await axios.post("http://localhost:5000/api/blogs", formData);
+      await axios.post("https://final-project-6-hh2l.onrender.com/api/blogs", formData);
       alert("✅ Blog uğurla əlavə olundu");
       setForm({
         title: "",

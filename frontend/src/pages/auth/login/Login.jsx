@@ -10,7 +10,7 @@ import { toast } from "react-toastify";
 import { Helmet } from "react-helmet";
 
 const Login = () => {
-  const baseUrl = "http://localhost:5000/auth";
+  const baseUrl = "https://final-project-6-hh2l.onrender.com/auth";
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();

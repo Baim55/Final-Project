@@ -8,7 +8,7 @@ export default function AdminBlog() {
 
   const fetchBlogs = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/blogs");
+      const res = await axios.get("https://final-project-6-hh2l.onrender.com/api/blogs");
       setBlogs(res.data);
     } catch (err) {
       console.error("❌ Bloglar alınarkən xəta:", err);
@@ -20,7 +20,7 @@ export default function AdminBlog() {
     if (!confirm) return;
 
     try {
-      await axios.delete(`http://localhost:5000/api/blogs/${id}`);
+      await axios.delete(`https://final-project-6-hh2l.onrender.com/api/blogs/${id}`);
       alert("🗑️ Blog silindi");
       setBlogs((prev) => prev.filter((blog) => blog._id !== id));
     } catch (err) {
@@ -41,7 +41,7 @@ export default function AdminBlog() {
         {blogs.map((blog) => (
           <div key={blog._id} className={styles.blogCard}>
             <img
-              src={`http://localhost:5000/images/${blog.image}`}
+              src={`https://final-project-6-hh2l.onrender.com/images/${blog.image}`}
               alt={blog.title}
               className={styles.image}
             />

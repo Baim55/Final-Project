@@ -13,7 +13,7 @@ export default function TourCard({ tour }) {
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/reviews?tourId=${tour._id}`);
+        const res = await axios.get(`https://final-project-6-hh2l.onrender.com/api/reviews?tourId=${tour._id}`);
         const reviews = res.data;
         if (reviews.length > 0) {
           const avg = reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length;
@@ -38,7 +38,7 @@ export default function TourCard({ tour }) {
     <div className={styles.card} onClick={() => navigate(`/detail/${tour._id}`)}>
       <div className={styles.imageWrapper}>
         <img
-          src={`http://localhost:5000/${tour.images?.[0]}`}
+          src={`https://final-project-6-hh2l.onrender.com/${tour.images?.[0]}`}
           alt={tour.name}
           className={styles.image}
         />

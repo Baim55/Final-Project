@@ -23,7 +23,7 @@ const Wishlist = () => {
   useEffect(() => {
     if (user) {
       axios
-        .get(`http://localhost:5000/api/wishlist?userId=${user._id}`)
+        .get(`https://final-project-6-hh2l.onrender.com/api/wishlist?userId=${user._id}`)
         .then((res) => dispatch(setWishlist(res.data)))
         .catch((err) => console.error("Fetch wishlist error:", err));
     }

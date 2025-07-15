@@ -73,7 +73,7 @@ export default function MyBookings() {
                   {b.tour?.images?.map((img, i) => (
                     <SwiperSlide key={i}>
                       <img
-                        src={`http://localhost:5000/${img}`}
+                        src={`https://final-project-6-hh2l.onrender.com/${img}`}
                         alt={`${b.tour?.name} şəkil ${i + 1}`}
                         className={styles.image}
                       />

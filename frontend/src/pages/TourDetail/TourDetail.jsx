@@ -40,7 +40,7 @@ export default function TourDetail() {
           setTour(existingTour);
         } else {
           // Fetch from backend if not in state
-          const response = await axios.get(`http://localhost:5000/api/tours/${id}`);
+          const response = await axios.get(`https://final-project-6-hh2l.onrender.com/api/tours/${id}`);
           setTour(response.data);
         }
       } catch (error) {
@@ -119,7 +119,7 @@ export default function TourDetail() {
               {tour.images.map((img, idx) => (
                 <SwiperSlide key={idx}>
                   <img
-                    src={`http://localhost:5000/${img}`}
+                    src={`https://final-project-6-hh2l.onrender.com/${img}`}
                     alt={`${tour.name} ${idx + 1}`}
                     className={styles.carouselImage}
                   />
